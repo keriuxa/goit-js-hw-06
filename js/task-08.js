@@ -11,9 +11,13 @@ function userInfo(event) {
     if (inputs.email ==="" || inputs.password ===""){
         return alert("Please fill the form!")
     }
+    
+    event.currentTarget.email.value = ""
+    event.currentTarget.password.value = ""
     return console.log(inputs)
 
 }
  
 loginForm.addEventListener('submit', userInfo)
+
 
