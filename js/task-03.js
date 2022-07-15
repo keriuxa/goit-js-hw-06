@@ -19,14 +19,11 @@ const imageList = document.querySelector(".gallery");
 imageList.style.display = "flex";
 
 const createList = (arr) => arr
-.map(image => `<li  id="imageItem"><img width = '150px' src="${image.url}" alt="${image.alt}"> </li>`)
+.map(image => `<li  id="imageItem"><img width = '250px' src="${image.url}" alt="${image.alt}"> </li>`)
 .join("")
 
 const newList = createList(images);
 
 imageList.insertAdjacentHTML("beforeend",newList)
-// const imageItem = document.querySelectorAll("#imageItem");
-// imageItem.style.textDecoration = 'none'
-
 
 
